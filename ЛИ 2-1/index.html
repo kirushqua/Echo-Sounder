@@ -1,0 +1,2048 @@
+<html>
+<head>
+    <meta charset="utf-8">
+ 
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>ЛИ 2-1</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+	
+    <style type="text/css">
+        body{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bolder;
+            
+        }
+        .set{
+            z-index: 100;
+            position: absolute;
+            top:30px;
+            left: 680px;
+            cursor:pointer;
+            z-index: 40;
+            width: 40px
+        }.set{
+            
+        }
+        #cp{
+            width: 310px;
+            height: 330px;
+            background-color: white;
+            position: absolute;
+            top:-400px;
+            left:800px;
+            border: 2px solid black;
+            z-index: 50;
+            padding: 30px;
+            transition: top 2s;
+            box-shadow: 10px black;
+            
+            
+        }
+        #cp table{
+            position: relative;
+           
+        }
+         .inp{
+        height: 40px;
+        width: 48px;
+        margin: 5px;
+        
+        text-align: center;
+        font-weight: 900;
+            font-size: 18px;
+            font-family:serif;
+    }
+        .knopka {
+        
+        width: 250px;
+        height: 50px;
+    
+        font-size: 14px;
+      color:#EEEEEE; /* цвет текста */
+      text-decoration: none; /* убирать подчёркивание у ссылок */
+      user-select: none; /* убирать выделение текста */
+      background-color: #282723; /* фон кнопки */
+      padding: 10px; /* отступ от текста */
+      outline: none;
+        border: 2px solid #EEEEFF;
+        transition: 0.4s;
+        z-index: 50;
+        margin-top: 50px;
+        font-family: 'Roboto Condensed', sans-serif;
+        
+} 
+.knopka:hover { color:rgba(175, 175, 175, 1);
+    transition: 0.4s;
+    } /* при наведении курсора мышки */
+.knopka:active { background: rgba(0,0,50,1); }
+        .knopka1{
+            position: absolute;
+            left: 757px;
+            top: -30px;
+            
+        }
+        .knopka2{
+            position: relative;
+            left: 30px;
+            top: -30px;
+        }.knopka3{
+            position: relative;
+            left: 30px;
+            top: -65px;
+        }
+        
+        #settings{
+            z-index: 50;
+        }
+        #sog{
+            width: 40px;
+            height: 30px;
+        }
+        #setting{
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: aqua;
+            z-index: 50;
+        }
+        #map{
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            background-color: rgba(0, 200, 0, 0.5);
+            position: absolute;
+            top:77px;
+            left: 624px;
+            
+        }
+        #map2{
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            background-color: rgba(0, 200, 0, 0);
+            position: absolute;
+            top:109px;
+            left: 624px;
+            
+        }
+        #map3{
+            width: 16px;
+            height:     16px;
+            border-radius: 8px;
+            
+            position: absolute;
+            top:530px;
+            left:551px;
+            
+            z-index: 20;
+            cursor:pointer;
+            
+        }
+        #map4{
+            width: 16px;
+            height:     16px;
+            border-radius: 8px;
+            
+            position: absolute;
+            top:530px;
+            left:624px;
+           
+            z-index: 20;
+            cursor:pointer;
+            
+        }
+        #buttons{
+            position: absolute;
+            top:411px;
+            left: 243px;
+        }
+        #img1{
+            position: relative;
+            left: -14px;
+            top:6px;
+            cursor:pointer;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            
+           
+            
+            
+        }
+        #img2{
+            transform: rotate(-90deg);
+            position: relative;
+            cursor:pointer;
+            left: 64px;
+            top:-44px;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            
+            
+        }
+        #img3{
+            transform: rotate(90deg);
+            position: relative;
+            cursor:pointer;
+            z-index: 10;
+            left: 143px;
+            top:-94px;
+            width: 50px;
+            height: 50px;
+            
+           
+            
+        }
+        #img4{
+            
+            position: relative;
+            left: 221px;
+            top:-144px;
+            cursor:pointer;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            
+        }
+        img{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: -10;
+        }
+        #one{
+            background: grey;
+            color: rgba(253, 0, 0, 1);
+        }
+        #two{
+            background: white;
+            color: rgba(253, 0, 0, 1);
+        }
+        #three{
+            background: white;
+            color: rgba(253, 0, 0, 1);
+        }
+        #four{
+            background: white;
+            color: rgba(253, 0, 0, 1);
+        }
+        
+        #n1{
+            background: none;
+        }
+        #n2{
+            background: none;
+        }
+        #n3{
+            background: none;
+        }
+        #n4{
+            background: none;
+        }
+        #n5{
+            background: none;
+        }
+        #tabl{
+            position: absolute;
+            top:180px;
+            left: 99px;
+            
+            
+        }
+        #tabl td{
+            text-align: center;
+            vertical-align: middle;
+            width: 23px;
+            height: 34px;
+            background-color: #400007;
+            font-weight: 500;
+            margin: 20px;
+            
+            margin-right:0;
+            padding: 0;
+        }
+        #tabl table{
+            background-color: #2a0706;
+            padding: 5px;
+            border-radius: 3px;
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        #fon img{
+            border: 2px solid black;
+            width: 730px;
+            border-radius: 4px;
+        }
+        #krug{
+            background-color: aqua;
+            z-index: 50;
+        }
+        #cp td{
+            font-weight: 900;
+            font-size: 18px;
+            font-family:serif;
+        }
+    </style>
+    
+    
+    <script>
+        
+        var x111=0.1;
+        ///var x111e=0;
+        var y111=0;
+        var x121=0;
+        ///var x121e;
+        var y121=0;
+        var x171=12;
+        var y171=0;
+        var x151b=Array(12, 18, 25, 33, 45, 60, 76, 100);
+        var x151a=7;
+        var x151=x151b[x151a];
+        var x31=0;
+        var y31=0;
+        var x161a=7;
+        var x161=x151b[x161a];
+        var x3122=0;
+        var y3122=0;
+        var num=1;
+        var p=1;
+        var ni=0;
+        var v=15;
+        var s=0;
+        var vob=15;
+        var y3121=-1;
+        var x3121a=Array('-', '+');
+        var x3122n=x3121a[1];
+        var x3121b=0;
+        var x3131=0;
+        var y3131=0;
+        var x3131w=0;
+        var dnol=0.75;
+        var linpopr=1.021;
+        var x2181=0;
+        var y2181=0;
+        var voln=1;
+        var sog=15;
+        var vt=1;
+        var kut=45;
+        
+        var vtz=0;
+        var fv=1;
+        var s111=0;
+        var t111=0;
+        var sec=0;
+        var s111s=0;
+        var s121=0;
+        var s121s=0;
+        var t121=0;
+        var vs121=0;
+        var t122=0;
+        var box=0;
+        
+            function init()
+            {
+                
+                
+               /// setInterval(change_table(), 1000); 
+            }
+
+            function tick()
+            {   if(x3121b==1){
+                if(x3122n=='-'){
+                    vtz=-x3122;
+                }else{
+                    vtz=x3122;
+                }}
+             if(x3131w==1){
+                fv=x3131/100;
+                }
+                change_table_s();
+                var v01=Math.random()*voln/2.5/fv;
+                var v02=-Math.random()*voln/2.5/fv;
+               v=Math.round((v02+v01+sog-vt*Math.cos(kut/57.2958)+vtz)*10)/10;
+                sec++;
+                s=s+v/3600;
+                ///document.getElementById("timer").
+                    ///childNodes[0].nodeValue = sec+'расстояние = '+s;
+                return(s);
+            }
+       
+         function calc(x111, y111, t){
+                
+                var x111a=Math.floor(x111/10000);
+                var x111b=Math.floor((x111-x111a*10000)/1000);
+                var x111c=Math.floor((x111-x111a*10000-x111b*1000)/100);
+                var x111d=Math.floor((x111-x111a*10000-x111b*1000-x111c*100)/10);
+                var x111e=Math.floor((x111-x111a*10000-x111b*1000-x111c*100-x111d*10));
+                
+                if(y111==1){
+                    if(t==2){
+                        x111a=x111a+1;
+                            if(x111a>9){
+                                x111a=x111a-10;
+                            }
+                        x111=x111-Math.floor(x111/10000)*10000+x111a*10000;
+                    }else if(t==3){
+                        x111a=x111a-1;
+                        if(x111a<0){
+                                x111a=x111a+10;
+                            }
+                    x111=x111-Math.floor(x111/10000)*10000+x111a*10000;
+                    }
+                    change_table();
+                }else if(y111==2){
+                    if(t==2){
+                        x111b=x111b+1;
+                            if(x111b>9){
+                                x111b=x111b-10;
+                            }
+                        x111=x111-Math.floor((x111-x111a*10000)/1000)*1000+x111b*1000;
+                    }else if(t==3){
+                        x111b=x111b-1;
+                        if(x111b<0){
+                                x111b=x111b+10;
+                            }
+                    x111=x111-Math.floor((x111-x111a*10000)/1000)*1000+x111b*1000;
+                    }
+                    change_table();
+                }else if(y111==3){
+                    if(t==2){
+                        x111c=x111c+1;
+                            if(x111c>9){
+                                x111c=x111c-10;
+                            }
+                        x111=x111-Math.floor((x111-x111a*10000-x111b*1000)/100)*100+x111c*100;
+                    }else if(t==3){
+                        x111c=x111c-1;
+                        if(x111c<0){
+                                x111c=x111c+10;
+                            }
+                    x111=x111-Math.floor((x111-x111a*10000-x111b*1000)/100)*100+x111c*100;
+                    }
+                    change_table();
+                }else if(y111==4){
+                    if(t==2){
+                        x111d=x111d+1;
+                            if(x111d>9){
+                                x111d=x111d-10;
+                            }
+                        x111=x111-Math.floor((x111-x111a*10000-x111b*1000-x111c*100)/10)*10+x111d*10;
+                    }else if(t==3){
+                        x111d=x111d-1;
+                        if(x111d<0){
+                                x111d=x111d+10;
+                            }
+                    x111=x111-Math.floor((x111-x111a*10000-x111b*1000-x111c*100)/10)*10+x111d*10;
+                    
+                    change_table();}
+                }else if(y111==5){
+                    if(t==2){
+                        x111e=x111e+1;
+                            if(x111e>9){
+                                x111e=0;
+                            }
+                       x111=x111-Math.floor((x111-x111a*10000-x111b*1000-x111c*100-x111d*10))+x111e;
+                    }else if(t==3){
+                        x111e=x111e-1;
+                        if(x111e<0){
+                                x111e=9;
+                            }
+                    x111=x111-Math.floor((x111-x111a*10000-x111b*1000-x111c*100-x111d*10))+x111e;
+                    }
+                    change_table();
+                }
+             
+             return(x111);
+         }
+             
+         var intervalID;
+            var sim='>';
+            function check_display(){
+            var ccc=0;
+            
+             intervalID = setInterval(repiter, 250);
+            ///setTimeout('clearInterval(intervalID)', 10250);
+            ///setTimeout('enter();', 11000);
+             var alpha=Array('А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ь', 'Э', 'Ю', 'Я','Δ', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
+    function repiter(){
+        if(ccc>40){
+            ccc=0;
+        }
+       sim=alpha[ccc];
+        ccc++;
+        change_table();
+    }
+          
+            }
+       function reload(f_tr, s_tr, t_tr, fo_tr){
+            document.getElementById('one').innerHTML='<td class="a1">'+f_tr.charAt(0)+'</td><td id="a2" class="a2">'+f_tr.charAt(1)+'</td><td id="a3" class="a1">'+f_tr.charAt(2)+'</td><td id="a4" class="a2">'+f_tr.charAt(3)+'</td><td id="a5" class="a1">'+f_tr.charAt(4)+'</td><td id="a6" class="a2">'+f_tr.charAt(5)+'</td><td id="a7" class="a1">'+f_tr.charAt(6)+'</td><td id="a8" class="a2">'+f_tr.charAt(7)+'</td><td id="a9" class="a1">'+f_tr.charAt(8)+'</td><td  id="a10" class="a2">'+f_tr.charAt(9)+'</td><td id="a11" class="a1">'+f_tr.charAt(10)+'</td><td id="a12" class="a2">'+f_tr.charAt(11)+'</td><td id="a13" class="a1">'+f_tr.charAt(12)+'</td><td id="a14" class="a2">'+f_tr.charAt(13)+'</td><td id="a15" class="a1">'+f_tr.charAt(14)+'</td><td id="a16" class="a2">'+f_tr.charAt(15)+'</td><td id="a17" class="a1">'+f_tr.charAt(16)+'</td><td id="a18" class="a2">'+f_tr.charAt(17)+'</td><td id="a19" class="a1">'+f_tr.charAt(18)+'</td><td id="a20" class="a2">'+f_tr.charAt(19)+'</td>';
+                
+                document.getElementById('two').innerHTML='<td id="b1" class="a2">'+s_tr.charAt(0)+'</td><td id="b2" class="a1">'+s_tr.charAt(1)+'</td><td id="b3" class="a2">'+s_tr.charAt(2)+'</td><td id="b4" class="a1">'+s_tr.charAt(3)+'</td><td id="b5" class="a2">'+s_tr.charAt(4)+'</td><td id="i1" class="a1">'+s_tr.charAt(5)+'</td><td id="i2" class="a2">'+s_tr.charAt(6)+'</td><td id="b8" class="a1">'+s_tr.charAt(7)+'</td><td id="i3" class="a2">'+s_tr.charAt(8)+'</td><td id="i4" class="a1">'+s_tr.charAt(9)+'</td><td id="b11" class="a2">'+s_tr.charAt(10)+'</td><td id="b12" class="a1">'+s_tr.charAt(11)+'</td><td id="b13" class="a2">'+s_tr.charAt(12)+'</td><td id="b14" class="a1">'+s_tr.charAt(13)+'</td><td id="b15" class="a2">'+s_tr.charAt(14)+'</td><td id="b16" class="a1">'+s_tr.charAt(15)+'</td><td id="b17" class="a2">'+s_tr.charAt(16)+'</td><td id="b18" class="a1">'+s_tr.charAt(17)+'</td><td id="b19" class="a2">'+s_tr.charAt(18)+'</td><td id="b20" class="a1">'+s_tr.charAt(19)+'</td>';
+                
+                document.getElementById('three').innerHTML='<td id="c1" class="a1">'+t_tr.charAt(0)+'</td><td id="c2" class="a2">'+t_tr.charAt(1)+'</td><td id="c3" class="a1">'+t_tr.charAt(2)+'</td><td id="c4" class="a2">'+t_tr.charAt(3)+'</td><td id="c5" class="a1">'+t_tr.charAt(4)+'</td><td id="v1" class="a2">'+t_tr.charAt(5)+'</td><td id="v2" class="a1">'+t_tr.charAt(6)+'</td><td id="m1" class="a2">'+t_tr.charAt(7)+'</td><td id="m2" class="a1">'+t_tr.charAt(8)+'</td><td id="c10" class="a2">'+t_tr.charAt(9)+'</td><td id="m3" class="a1">'+t_tr.charAt(10)+'</td><td id="m4" class="a2">'+t_tr.charAt(11)+'</td><td id="c13" class="a1">'+t_tr.charAt(12)+'</td><td id="m5" class="a2">'+t_tr.charAt(13)+'</td><td id="c15" class="a1">'+t_tr.charAt(14)+'</td><td id="m6" class="a2">'+t_tr.charAt(15)+'</td><td id="c17" class="a1">'+t_tr.charAt(16)+'</td><td id="c18" class="a2">'+t_tr.charAt(17)+'</td><td id="c19" class="a1">'+t_tr.charAt(18)+'</td><td id="c20" class="a2">'+t_tr.charAt(19)+'</td>';
+                
+                document.getElementById('four').innerHTML='<td id="d1" class="a2">'+fo_tr.charAt(0)+'</td><td id="d2" class="a1">'+fo_tr.charAt(1)+'</td><td id="d3" class="a2">'+fo_tr.charAt(2)+'</td><td id="d4" class="a1">'+fo_tr.charAt(3)+'</td><td id="d5" class="a2">'+fo_tr.charAt(4)+'</td><td id="n1" class="a1">'+fo_tr.charAt(5)+'</td><td id="n2" class="a2">'+fo_tr.charAt(6)+'</td><td id="n3" class="a1">'+fo_tr.charAt(7)+'</td><td id="n4" class="a2">'+fo_tr.charAt(8)+'</td><td id="d10" class="a1">'+fo_tr.charAt(9)+'</td><td id="n5" class="a2">'+fo_tr.charAt(10)+'</td><td id="d12" class="a1">'+fo_tr.charAt(11)+'</td><td id="d13" class="a2">'+fo_tr.charAt(12)+'</td><td id="d14" class="a1">'+fo_tr.charAt(13)+'</td><td id="d15" class="a2">'+fo_tr.charAt(14)+'</td><td id="d16" class="a1">'+fo_tr.charAt(15)+'</td><td id="d17" class="a2">'+fo_tr.charAt(16)+'</td><td id="d18" class="a1">'+fo_tr.charAt(17)+'</td><td id="d19" class="a2">'+fo_tr.charAt(18)+'</td><td id="d20" class="a1">'+fo_tr.charAt(19)+'</td>';}
+      
+        function change_table(){
+            if(v<0){
+                v=Math.abs(v);
+            var vv='V =-'+Math.floor(v/10)+Math.round(Math.floor(v)-Math.floor(v/10)*10)+','+Math.round((v*10-Math.floor(v)*10))+'УЗ';
+            var vs='S = '+Math.floor(s/10)+Math.floor(Math.floor(s)-Math.floor(s/10)*10)+','+Math.floor((s*10-Math.floor(s)*10))+'МИЛИ';  
+            }else{
+            var vv='V = '+Math.floor(v/10)+Math.round(Math.floor(v)-Math.floor(v/10)*10)+','+Math.round((v*10-Math.floor(v)*10))+'УЗ';
+            var vs='S = '+Math.floor(s/10)+Math.floor(Math.floor(s)-Math.floor(s/10)*10)+','+Math.floor((s*10-Math.floor(s)*10))+'МИЛИ';  
+            }
+            if(p==0){
+                var f_tr='';
+                var s_tr='';
+                var t_tr='';
+                var fo_tr='';
+            }else if(p==991){
+                var f_tr=' ';
+                var s_tr='  ЛАГ ИНДУКЦИОННЫЙ';                
+                var t_tr='      ЛИ 2-1';
+                var fo_tr=""; 
+            }else if(p==992){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='     ПРОГРАММ';
+                var fo_tr="   И УСТРОЙСТВ ЛАГА"; 
+            }else if(p==993){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';               
+                var t_tr='';
+                var fo_tr=" ДИСПЛЕЯ И РИПИТЕРА"; 
+            }else if(p==994){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='';
+                var fo_tr="   МИКРОСХЕМЫ ОЗУ"; 
+            }else if(p==995){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='';
+                var fo_tr="   МИКРОСХЕМЫ ПЗУ"; 
+            }else if(p==996){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='МИКРОСХЕМЫ ПОПРАВОЧ-';
+                var fo_tr=" НЫХ ЭЛЕМЕНТОВ"; 
+            }else if(p==997){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='      ВКЛЮЧЕНА';
+                var fo_tr="НЕЛИНЕЙНАЯ ПОПРАВКА"; 
+            }else if(p==998){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='      ВКЛЮЧЕНА';
+                var fo_tr="  КОРРЕКЦИЯ ΔНУЛЯ"; 
+            }else if(p==999){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='      ВКЛЮЧЕНА';
+                var fo_tr="  ЛИНЕЙНАЯ ПОПРАВКА"; 
+            }else if(p==9910){
+                if(x3121b==1){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='      ВКЛЮЧЕНА';
+                var fo_tr=" ПОПРАВКА НА ТЕЧЕНИЕ"; 
+                }else{
+                    var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='    НЕ ВКЛЮЧЕНА';
+                var fo_tr=" ПОПРАВКА НА ТЕЧЕНИЕ"; 
+                }
+            }else if(p==9911){
+                if(x3131w==1){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='      ВКЛЮЧЕН';
+                var fo_tr="  ФИЛЬТР СКОРОСТИ"; 
+                }else{
+                    var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='    НЕ ВКЛЮЧЕН';
+                var fo_tr="  ФИЛЬТР СКОРОСТИ"; 
+                }
+            }else if(p==9912){
+                var f_tr='   АВТОМАТИЧЕСКОЕ';
+                var s_tr='    ТЕСТИРОВАНИЕ';                
+                var t_tr='   ';
+                var fo_tr="        АЦП"; 
+            }else if(p==10){
+                var f_tr=vv;
+                var s_tr=vs;
+                
+                var t_tr='2,3 - ВЫБОР РЕЖИМА';
+                var fo_tr='4 - ВЫХОД В МЕНЮ';
+                ///Убираем подсвечивание
+                
+            }else if(p==1){
+                
+                if(num==1){
+                var f_tr='РЕЖИМ РАБОТЫ';
+                var s_tr='>РАБОТА';
+                var t_tr=' ПРОВЕРКА';
+                var fo_tr=' КОРРЕКЦИЯ ПРИБОРА';
+                }else if(num==2){
+            
+            var f_tr='РЕЖИМ РАБОТЫ';
+                var s_tr=' РАБОТА';
+                var t_tr='>ПРОВЕРКА';
+                var fo_tr=' КОРРЕКЦИЯ ПРИБОРА';
+            
+            
+        }else if(num==3){
+            
+            var f_tr='РЕЖИМ РАБОТЫ';
+                var s_tr=' РАБОТА';
+                var t_tr=' ПРОВЕРКА';
+                var fo_tr='>КОРРЕКЦИЯ ПРИБОРА';
+           
+              
+    }
+                
+                
+                
+            }else if(p==11){
+                var f_tr=vv;
+                var s_tr=vs;
+                
+                var t_tr=' СПИСАНИЕ ДИСТАНЦИИ';
+                var fo_tr='1-НАБОР  4-ВКЛ/ВЫКЛ.';
+                ///Убираем подсвечивание
+                
+            }else if(p==113){
+                
+                var f_tr=vv;
+                var s_tr=vs;
+                
+                var t_tr='      ВНИМАНИЕ!';
+                var fo_tr='  ДИСТАНЦИЯ СПИСАНА';
+                ///Убираем подсвечивание
+                
+            }else if(p==12){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='  НАБОР ДИСТАНЦИИ';
+                var fo_tr='1-НАБОР  4-ВКЛ/ВЫКЛ.';
+            }else if(p==13){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr=' СРЕДНЯЯ СКОРОСТЬ И';
+                var fo_tr=' ВРЕМЯ НА ДИСТАНЦИИ';
+            }else if(p==14){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr=' ОЧИСТКА ДИСТАНЦИИ';
+                var fo_tr="  ВКЛ.-НАЖМИТЕ '4'";
+            }else if(p==15){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='  ЯРКОСТЬ ДИСПЛЕЯ';
+                var fo_tr='1-НАБОР  4-ВКЛ/ВЫКЛ.';
+            }else if(p==16){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='  ЯРКОСТЬ РЕПИТОРА';
+                var fo_tr='1-НАБОР  4-ВКЛ/ВЫКЛ.';
+            }else if(p==17){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr=' УСТАНОВКА СКОРОСТИ';
+                var fo_tr='1-НАБОР  4-ВКЛ/ВЫКЛ.';
+            }else if(p==171){
+                var x171a=Math.floor(x171/100);
+                var x171b=Math.floor((x171-x171a*100)/10);
+                var x171c=Math.floor((x171-x171a*100-x171b*10));
+                ///var x171d=Math.floor((x171-x171a*10000-x171b*1000-x171c*100));
+                
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr=' УСТАНОВКА СКОРОСТИ';
+                var fo_tr='       '+x171a+x171b+','+x171c+'УЗ';
+            }else if(p==111){
+                var x111a=Math.floor(x111/1000);
+                var x111b=Math.floor((x111-x111a*1000)/100);
+                var x111c=Math.floor((x111-x111a*1000-x111b*100)/10);
+                var x111d=Math.floor((x111-x111a*1000-x111b*100-x111c*10));
+                var x111e=Math.round((x111-x111a*1000-x111b*100-x111c*10-x111d)*10);
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='СПИСАНИЕ ДИСТАНЦИИ';
+                var fo_tr='     '+x111a+x111b+x111c+x111d+','+x111e+'МИЛИ';
+               ///input();
+                            }else if(p==121){
+                var x121x=x121*10;
+                var x121a=Math.floor(x121x/10000);
+                var x121b=Math.floor((x121x-x121a*10000)/1000);
+                var x121c=Math.floor((x121x-x121a*10000-x121b*1000)/100);
+                var x121d=Math.floor((x121x-x121a*10000-x121b*1000-x121c*100)/10);
+                var x121e=Math.round((x121x-x121a*10000-x121b*1000-x121c*100-x121d*10));
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='  НАБОР ДИСТАНЦИИ';
+                var fo_tr='     '+x121a+x121b+x121c+x121d+','+x121e+'МИЛИ';
+                
+                ///input();
+                            }else if(p==122){
+                var x121a=Math.floor(x121/1000);
+                var x121b=Math.floor((x121-x121a*1000)/100);
+                var x121c=Math.floor((x121-x121a*1000-x121b*100)/10);
+                var x121d=Math.floor((x121-x121a*1000-x121b*100-x121c*10));
+                var x121e=Math.floor((x121-x121a*1000-x121b*100-x121c*10-x121d)*10);
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='  НАБОР ДИСТАНЦИИ';
+                var fo_tr='     '+x121a+x121b+x121c+x121d+','+x121e+'МИЛИ';
+                ///input();
+                            }else if(p==123){
+                
+                ///var x121e=Math.floor((x121-x121a*1000-x121b*100-x121c*10-x121d)*10);
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='   НАБОР ДИСТАНЦИИ';
+                var fo_tr='     ЗАКОНЧЕН!';
+                ///input();
+                            }else if(p==131){
+                if(t122==0){
+                    var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='        НЕТ';
+                var fo_tr='     ИНФОРМАЦИИ';
+                }else{
+                    
+                var t122h=Math.floor((t122)/3600);
+                var t122ha=Math.floor(t122h/10);
+                var t122hb=Math.floor(t122h-t122ha*10);
+                
+                var t122m=Math.floor((t122-t122h*3600)/60);
+                var t122ma=Math.floor(t122m/10);
+                var t122mb=Math.floor(t122m-t122ma*10);
+                var t122s=Math.floor((t122-t122h*3600-t122m*60));
+                var t122sa=Math.floor(t122s/10);
+                var t122sb=Math.floor(t122s-t122sa*10);
+                
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr='V(СРЕД.)='+Math.round(vs121/t122*10)/10;
+                var fo_tr='ВРЕМЯ= '+t122ha+t122hb+':'+t122ma+t122mb+':'+t122sa+t122sb;
+                
+                ///input();
+                            }}else if(p==151){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr="КЛАВИШ.'3' ВЫБЕРИТЕ ";
+                var fo_tr='УРОВЕНЬ ЯРКОСТИ:'+x151+'%';
+                            }else if(p==161){
+                var f_tr=vv;
+                var s_tr=vs;
+                var t_tr="КЛАВИШ.'3' ВЫБЕРИТЕ ";
+                var fo_tr='УРОВЕНЬ ЯРКОСТИ:'+x161+'%';
+                            }else if(p==172){
+                                var bbb=x171/10;
+                                
+                var f_tr='V = '+bbb+'УЗ';
+                var s_tr=vs;
+                var t_tr=" СКОРОСТЬ ОПЕРАТОРОМ";
+                var fo_tr='     УСТАНОВЛЕНА';
+                            }else if(p==21){
+
+
+                            if(num==1){
+                var f_tr='>КЛАВИАТУРА        1';
+                var s_tr=' ДИСПЛЕЙ';
+                var t_tr=' ТЕСТ';
+                var fo_tr=' СТРАНИЦА 2-3';
+                            }else if(num==2){
+                var f_tr=' КЛАВИАТУРА        1';
+                var s_tr='>ДИСПЛЕЙ';
+                var t_tr=' ТЕСТ';
+                var fo_tr=' СТРАНИЦА 2-3';
+                            }else if(num==3){
+                var f_tr=' КЛАВИАТУРА        1';
+                var s_tr=' ДИСПЛЕЙ';
+                var t_tr='>ТЕСТ';
+                var fo_tr=' СТРАНИЦА 2-3';
+                            }else if(num==4){
+                var f_tr=' КЛАВИАТУРА        1';
+                var s_tr=' ДИСПЛЕЙ';
+                var t_tr=' ТЕСТ';
+                var fo_tr='>СТРАНИЦА 2-3';
+                            }}else if(p==22){
+                                if(num==1){
+                var f_tr='>ТЕЧЕНИЕ           2';
+                var s_tr=' ФИЛЬТР СКОРОСТИ'
+                var t_tr=' ΔНУЛЯ';
+                var fo_tr=' СТРАНИЦА 3-3';
+                            }else if(num==2){
+                var f_tr=' ТЕЧЕНИЕ           2';
+                var s_tr='>ФИЛЬТР СКОРОСТИ'
+                var t_tr=' ΔНУЛЯ';
+                var fo_tr=' СТРАНИЦА 3-3';
+                            }else if(num==3){
+                var f_tr=' ТЕЧЕНИЕ           2';
+                var s_tr=' ФИЛЬТР СКОРОСТИ'
+                var t_tr='>ΔНУЛЯ';
+                var fo_tr=' СТРАНИЦА 3-3';
+                            }else if(num==4){
+                var f_tr=' ТЕЧЕНИЕ           2';
+                var s_tr=' ФИЛЬТР СКОРОСТИ'
+                var t_tr=' ΔНУЛЯ';
+                var fo_tr='>СТРАНИЦА 3-3';
+                            }}else if(p==23){
+                                if(num==1){
+                var f_tr='>ЛИНЕЙНАЯ ПОПРАВКА  3';
+                var s_tr=' НЕЛИНЕЙНАЯ КОРРЕКЦИЯ'
+                var t_tr=' СТРАНИЦА 1-3';
+                var fo_tr=' ВЫХОД В МЕНЮ';
+                            }else if(num==2){
+                var f_tr=' ЛИНЕЙНАЯ ПОПРАВКА  3';
+                var s_tr='>НЕЛИНЕЙНАЯ КОРРЕКЦИЯ'
+                var t_tr=' СТРАНИЦА 1-3';
+                var fo_tr=' ВЫХОД В МЕНЮ';
+                            }else if(num==3){
+                var f_tr=' ЛИНЕЙНАЯ ПОПРАВКА  3';
+                var s_tr=' НЕЛИНЕЙНАЯ КОРРЕКЦИЯ'
+                var t_tr='>СТРАНИЦА 1-3';
+                var fo_tr=' ВЫХОД В МЕНЮ';
+                            }else if(num==4){
+                var f_tr=' ЛИНЕЙНАЯ ПОПРАВКА  3';
+                var s_tr=' НЕЛИНЕЙНАЯ КОРРЕКЦИЯ'
+                var t_tr=' СТРАНИЦА 1-3';
+                var fo_tr='>ВЫХОД В МЕНЮ';
+                            }}else if(p==2111){
+                var f_tr='     КЛАВИАТУРА';
+                var s_tr='  '
+                var t_tr='   НАЖМИТЕ КЛАВИШУ ';
+                var fo_tr='          1';
+                            }else if(p==2113){
+                var f_tr='     КЛАВИАТУРА';
+                var s_tr='  '
+                var t_tr='   НАЖМИТЕ КЛАВИШУ ';
+                var fo_tr='          2';
+                            }else if(p==2115){
+                var f_tr='     КЛАВИАТУРА';
+                var s_tr='  '
+                var t_tr='   НАЖМИТЕ КЛАВИШУ ';
+                var fo_tr='          3';
+                            }else if(p==2112||p==2114){
+                var f_tr='      ';
+                var s_tr='  КЛАВИША ИСПРАВНА'
+                var t_tr='    ';
+                var fo_tr="НАЖМИТЕ КЛАВИШУ '4'";
+                            }else if(p==2116){
+                var f_tr='      ';
+                var s_tr='КЛАВИАТУРА ПРОВЕРЕНА'
+                var t_tr='    ';
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'";
+                            }else if(p==212){
+                var f_tr='  ПРОВЕРКА ДИСПЛЕЯ';
+                var s_tr=' ';
+                var t_tr='    ';
+                var fo_tr="ВКЛ/ВЫКЛ.НАЖМИТЕ '4'";
+                    }else if(p==2121){
+                var f_tr=''+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim;
+                var s_tr=''+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim;
+                var t_tr=''+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim;
+                var fo_tr=''+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim+sim;
+                    }else if(p==2122){
+                        clearInterval(intervalID);
+                var f_tr='      ';
+                var s_tr=' ПРОВЕРКА ЗАКОНЧЕНА'
+                var t_tr='    ';
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'";
+                            }else if(p==213){
+                                ///var vtest=
+                        var f_tr='      ТЕСТ ЛАГА';
+                var s_tr='  '
+                var t_tr='V = 30,0'+Math.round(Math.random()*9)+' УЗ';
+                var fo_tr='S = '+Math.round(Math.random()*9)+','+Math.round(Math.random()*9)+' МИЛИ';
+                            }else if(p==31){
+                var x31a=Math.floor(x31/1000);
+                var x31b=Math.floor((x31-x31a*1000)/100);
+                var x31c=Math.floor((x31-x31a*1000-x31b*100)/10);
+                var x31d=Math.floor((x31-x31a*1000-x31b*100-x31c*10));
+                
+                var f_tr='       ';
+                var s_tr='  ВВЕДИТЕ ПАРОЛЬ'
+                var t_tr='       '+x31a+x31b+','+x31c+x31d;
+                var fo_tr=' ';
+                            }else if(p==32){
+                                if(num==1){
+                var f_tr='>ЮСТИРОВКА         1';
+                var s_tr=' ТЕЧЕНИЕ  ';
+                var t_tr=' ФИЛЬТР СКОРОСТИ';
+                var fo_tr=' СТРАНИЦА 2-3';
+                            }else if(num==2){
+                var f_tr=' ЮСТИРОВКА         1';
+                var s_tr='>ТЕЧЕНИЕ     ';
+                var t_tr=' ФИЛЬТР СКОРОСТИ';
+                var fo_tr=' СТРАНИЦА 2-3';   
+                            }else if(num==3){
+                var f_tr=' ЮСТИРОВКА         1';
+                var s_tr=' ТЕЧЕНИЕ'       ;      
+                var t_tr='>ФИЛЬТР СКОРОСТИ';
+                var fo_tr=' СТРАНИЦА 2-3';
+                            }else if(num==4){
+                var f_tr=' ЮСТИРОВКА         1';
+                var s_tr=' ТЕЧЕНИЕ';             
+                var t_tr=' ФИЛЬТР СКОРОСТИ';
+                var fo_tr='>СТРАНИЦА 2-3';
+                            }}else if(p==33){
+                                if(num==1){
+                var f_tr='>ΔНУЛЯ             2';
+                var s_tr=' ЛИНЕЙНАЯ ПОПРАВКА';             
+                var t_tr=' НЕЛИНЕЙНАЯ ПОПРАВКА';
+                var fo_tr=' СТРАНИЦА 3-3';
+                                }else if(num==2){
+                var f_tr=' ΔНУЛЯ             2';
+                var s_tr='>ЛИНЕЙНАЯ ПОПРАВКА';             
+                var t_tr=' НЕЛИНЕЙНАЯ ПОПРАВКА';
+                var fo_tr=' СТРАНИЦА 3-3';
+                                }else if(num==3){
+                var f_tr=' ΔНУЛЯ             2';
+                var s_tr=' ЛИНЕЙНАЯ ПОПРАВКА';             
+                var t_tr='>НЕЛИНЕЙНАЯ ПОПРАВКА';
+                var fo_tr=' СТРАНИЦА 3-3';
+                                }else if(num==4){
+                var f_tr=' ΔНУЛЯ             2';
+                var s_tr=' ЛИНЕЙНАЯ ПОПРАВКА';             
+                var t_tr=' НЕЛИНЕЙНАЯ ПОПРАВКА';
+                var fo_tr='>СТРАНИЦА 3-3';
+                                }  }else if(p==34){
+                                    if(num==1){
+                var f_tr='>ГРАДУИРОВКА       3';
+                var s_tr=' СТРАНИЦА 1-3';                 
+                var t_tr=' ВЫХОД В МЕНЮ';
+                var fo_tr=' '; 
+                                    }else  if(num==2){
+                var f_tr=' ГРАДУИРОВКА       3';
+                var s_tr='>СТРАНИЦА 1-3';                 
+                var t_tr=' ВЫХОД В МЕНЮ';
+                var fo_tr=' '; 
+                                    }else  if(num==3){
+                var f_tr=' ГРАДУИРОВКА       3';
+                var s_tr=' СТРАНИЦА 1-3';                 
+                var t_tr='>ВЫХОД В МЕНЮ';
+                var fo_tr=' '; 
+                                    }      }else if(p==30){
+                var f_tr='   ПАРОЛЬ НЕВЕРЕН';
+                var s_tr='';                 
+                var t_tr="'1' - ПОВТОРИТЬ ВВОД";
+                var fo_tr="'4' - ВЫХОД В МЕНЮ";             
+            }else if(p==312){
+                var f_tr=' 1 - УСТАНОВКА';
+                var s_tr=' 2 - ВКЛЮЧЕНИЕ';                 
+                var t_tr=" 3 - ВЫКЛЮЧЕНИЕ";
+                var fo_tr=" 4 - ВЫХОД"; 
+            }else if(p==3121){
+                var f_tr='ПОПРАВКА НА ТЕЧЕНИЕ';
+                var s_tr="КЛАВИШ.'3'ВЫБЕРИТЕ";                 
+                var t_tr="ЗНАК ТЕЧЕНИЯ - +";
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==3122){
+                var x3122a=Math.floor(x3122/10);
+                var x3122b=Math.floor((x3122-x3122a*10));
+                var x3122c=Math.floor((x3122-x3122a*10-x3122b)*10);
+                var x3122d=Math.round((x3122-x3122a*10-x3122b-x3122c/10)*100);
+                var f_tr='ПОПРАВКА НА ТЕЧЕНИЕ';
+                var s_tr="   "+x3122n+' '+x3122a+x3122b+','+x3122c+x3122d;                 
+                var t_tr=" ";
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==3123){
+                var f_tr='      ПОДОЖДИТЕ';
+                var s_tr="        ИДЕТ";                 
+                var t_tr="  ЗАПИСЬ КОРРЕКЦИИ";
+                var fo_tr="  "; 
+            }else if(p==313){
+                var f_tr=' 1 - УСТАНОВКА';
+                var s_tr=' 2 - ВКЛЮЧЕНИЕ';                 
+                var t_tr=" 3 - ВЫКЛЮЧЕНИЕ";
+                var fo_tr=" 4 - ВЫХОД"; 
+            }else if(p==3131){
+                var x3131a=Math.floor(x3131/100);
+                var x3131b=Math.floor((x3131-x3131a*100)/10);
+                var x3131c=Math.floor((x3131-x3131a*100-x3131b*10));
+                var f_tr='  ФИЛЬТР СКОРОСТИ';
+                var s_tr='  ';                 
+                var t_tr="     "+x3131a+x3131b+x3131c+' СЕКУНД';
+                var fo_tr=" "; 
+            }else if(p==3100){
+                var f_tr='    ИСПОЛЬЗУЕТСЯ';
+                var s_tr="    ТОЛЬКО";                 
+                var t_tr="    СЕРВИСНЫМИ";
+                var fo_tr="    СПЕЦИАЛИСТАМИ"; 
+            }else if(p==2141){
+                
+                var x3122a=Math.floor(x3122/10);
+                var x3122b=Math.floor((x3122-x3122a*10));
+                var x3122c=Math.floor((x3122-x3122a*10-x3122b)*10);
+                var x3122d=Math.round((x3122-x3122a*10-x3122b-x3122c/10)*100);
+                var f_tr=' ПОПРАВКА НА ТЕЧЕНИЕ';
+                var s_tr="  ";                 
+                var t_tr="   "+x3122n+' '+x3122a+x3122b+','+x3122c+x3122d+' УЗ';  
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==2140){
+                
+                var f_tr=' ПОПРАВКА НА ТЕЧЕНИЕ';
+                var s_tr="  ";                 
+                var t_tr=" ДАННЫЕ ОТСУТСТВУЮТ";  
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==2151){
+                var x3131a=Math.floor(x3131/100);
+                var x3131b=Math.floor((x3131-x3131a*100)/10);
+                var x3131c=Math.floor((x3131-x3131a*100-x3131b*10));
+                var f_tr='  ФИЛЬТР СКОРОСТИ';
+                var s_tr='  ';                 
+                var t_tr="     "+x3131a+x3131b+x3131c+' СЕКУНД';
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==2150){
+                var x3131a=Math.floor(x3131/100);
+                var x3131b=Math.floor((x3131-x3131a*100)/10);
+                var x3131c=Math.floor((x3131-x3131a*100-x3131b*10));
+                var f_tr='  ФИЛЬТР СКОРОСТИ';
+                var s_tr='  ';                 
+                var t_tr=' ДАННЫЕ ОТСУТСТВУЮТ';
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==216){
+                var f_tr='     УХОД НУЛЯ ';
+                var s_tr='  ';                 
+                var t_tr='ΔНУЛЯ ='+dnol+' УЗ';
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==217){
+                var f_tr=' ЛИНЕЙНАЯ ПОПРАВКА';
+                var s_tr='  ';                 
+                var t_tr='   К ='+linpopr;
+                var fo_tr=" НАЖМИТЕ КЛАВИШУ '4'"; 
+            }else if(p==2181){
+                
+                var x2181a=Math.floor(x2181/1000);
+                var x2181b=Math.floor((x2181-x2181a*1000)/100);
+                var x2181c=Math.floor((x2181-x2181a*1000-x2181b*100)/10);
+                var x2181d=Math.round((x2181-x2181a*1000-x2181b*100-x2181c*10));
+                var f_tr='НЕЛИНЕЙНЫЙ КОРРЕКТОР';
+                var s_tr=' ВВЕДИТЕ ЛАГОВУЮ';                 
+                var t_tr='     СКОРОСТЬ';
+                var fo_tr="     "+x2181a+x2181b+','+x2181c+x2181d; 
+            }else if(p==2182){
+                var x2181a=Math.floor(x2181/1000);
+                var x2181b=Math.floor((x2181-x2181a*1000)/100);
+                var x2181c=Math.floor((x2181-x2181a*1000-x2181b*100)/10);
+                var x2181d=Math.round((x2181-x2181a*1000-x2181b*100-x2181c*10));
+                var x2182=x2181+x2181a+x2181b/2+3-x2181c;
+                var x2182a=Math.floor(x2182/1000);
+                var x2182b=Math.floor((x2182-x2182a*1000)/100);
+                var x2182c=Math.floor((x2182-x2182a*1000-x2182b*100)/10);
+                var x2182d=Math.round((x2182-x2182a*1000-x2182b*100-x2182c*10));
+                var f_tr='ЛАГОВАЯ СКОРОСТЬ';
+                var s_tr="  VЛ = "+x2181a+x2181b+','+x2181c+x2181d;                
+                var t_tr='СКОРРЕКТ. СКОРОСТЬ';
+                var fo_tr="  V = "+x2182a+x2182b+','+x2182c+x2182d;   
+            }else if(p==2183){
+                var x2181a=Math.floor(x2181/1000);
+                var x2181b=Math.floor((x2181-x2181a*1000)/100);
+                var x2181c=Math.floor((x2181-x2181a*1000-x2181b*100)/10);
+                var x2181d=Math.round((x2181-x2181a*1000-x2181b*100-x2181c*10));
+                
+                var f_tr='ЛАГОВАЯ СКОРОСТЬ';
+                var s_tr=' V='+x2181a+x2181b+','+x2181c+x2181d;                
+                var t_tr='1 - ПРОДОЛЖАТЬ';
+                var fo_tr="2 - ЗАКОНЧИТЬ"; 
+            }
+            reload(f_tr, s_tr, t_tr, fo_tr);
+            if(p==111||p==121){input();}
+            if(p==31){input4('m1', 'm2','m3', 'm4');}
+            if(p==3122){input4('i1', 'i2','i3', 'i4');}
+            if(p==3121){input4('m5', 'm6','i3', 'i4');}
+            if(p==3131){input4('v1', 'v2','m1', 'i4');}
+            if(p==2181){input4('n1', 'n2','n4', 'd10');}
+            if(p==171){input4('n3', 'n4','n5', 'n1');}
+        }
+        
+        
+       
+        function change_table_s(){
+            
+            
+            ///// ОТОБРАЖЕНИЕ S и V
+if(v<0){
+                v=Math.abs(v);
+            var vv='V =-'+Math.floor(v/10)+Math.round(Math.floor(v)-Math.floor(v/10)*10)+','+Math.round((v*10-Math.floor(v)*10))+'УЗ';
+            var vs='S = '+Math.floor(s/10)+Math.floor(Math.floor(s)-Math.floor(s/10)*10)+','+Math.floor((s*10-Math.floor(s)*10))+'МИЛИ';  
+            }else{
+            var vv='V = '+Math.floor(v/10)+Math.round(Math.floor(v)-Math.floor(v/10)*10)+','+Math.round((v*10-Math.floor(v)*10))+'УЗ';
+            var vs='S = '+Math.floor(s/10)+Math.floor(Math.floor(s)-Math.floor(s/10)*10)+','+Math.floor((s*10-Math.floor(s)*10))+'МИЛИ';  
+            }
+                
+            if(p==11||p==12||p==13||p==14||p==15||p==16||p==17||p==111||p==121||p==171||p==10||p==123||p==151||p==161||p==131){
+                var f_tr=vv;
+                var s_tr=vs;
+               
+                ///Убираем подсвечивание
+                
+            }else if(p==112){
+                
+                var sss=Math.floor(sec-t111);
+                var t111h=Math.floor((sss)/3600);
+                var t111ha=Math.floor(t111h/10);
+                var t111hb=Math.floor(t111h-t111ha*10);
+                
+                var t111m=Math.floor((sss-t111h*3600)/60);
+                var t111ma=Math.floor(t111m/10);
+                var t111mb=Math.floor(t111m-t111ma*10);
+                var t111s=Math.floor((sss-t111h*3600-t111m*60));
+                var t111sa=Math.floor(t111s/10);
+                var t111sb=Math.floor(t111s-t111sa*10);
+                var s111n=Math.round((s111-(s-s111s))*10)/10;
+                ///alert(s111n);
+                if(s111n>0){
+                var s111na=Math.floor(s111n);
+                
+                var s111nb=Math.round((s111n-s111na)*10);
+                var f_tr=vv;
+                var s_tr=vs;
+                    if(s111na<10){
+                        var fo_tr='S='+s111na+','+s111nb+'     T='+t111ha+t111hb+':'+t111ma+t111mb+':'+t111sa+t111sb;
+                    }else if(s111na<100){
+                        var fo_tr='S='+s111na+','+s111nb+'    T='+t111ha+t111hb+':'+t111ma+t111mb+':'+t111sa+t111sb;
+                    }else if(s111na<1000){
+                var fo_tr='S='+s111na+','+s111nb+'   T='+t111ha+t111hb+':'+t111ma+t111mb+':'+t111sa+t111sb;
+                    }else{
+                        var fo_tr='S='+s111na+','+s111nb+'  T='+t111ha+t111hb+':'+t111ma+t111mb+':'+t111sa+t111sb;
+                    }
+                ///var fo_tr=''+sss;
+                document.getElementById('four').innerHTML='<td id="d1">'+fo_tr.charAt(0)+'</td><td id="d2">'+fo_tr.charAt(1)+'</td><td id="d3">'+fo_tr.charAt(2)+'</td><td id="d4">'+fo_tr.charAt(3)+'</td><td id="d5">'+fo_tr.charAt(4)+'</td><td id="n1">'+fo_tr.charAt(5)+'</td><td id="n2">'+fo_tr.charAt(6)+'</td><td id="n3">'+fo_tr.charAt(7)+'</td><td id="n4">'+fo_tr.charAt(8)+'</td><td id="d10">'+fo_tr.charAt(9)+'</td><td id="n5">'+fo_tr.charAt(10)+'</td><td id="d12">'+fo_tr.charAt(11)+'</td><td id="d13">'+fo_tr.charAt(12)+'</td><td id="d14">'+fo_tr.charAt(13)+'</td><td id="d15">'+fo_tr.charAt(14)+'</td><td id="d16">'+fo_tr.charAt(15)+'</td><td id="d17">'+fo_tr.charAt(16)+'</td><td id="d18">'+fo_tr.charAt(17)+'</td><td id="d19">'+fo_tr.charAt(18)+'</td><td id="d20">'+fo_tr.charAt(19)+'</td>';
+                
+            }else{
+                p=113;
+                change_table();
+            }}else if(p==122){
+                var f_tr=vv;
+                var s_tr=vs;
+                t122++;
+                vs121=vs121+v;
+                      var ds=(s121-s);
+                ///alert('asdads');
+                      if(ds<0){
+                p=123;
+                change_table();
+            }
+                      
+                      }else{
+                                return;
+                            }
+            document.getElementById('two').innerHTML='<td>'+s_tr.charAt(0)+'</td><td>'+s_tr.charAt(1)+'</td><td>'+s_tr.charAt(2)+'</td><td>'+s_tr.charAt(3)+'</td><td>'+s_tr.charAt(4)+'</td><td>'+s_tr.charAt(5)+'</td><td>'+s_tr.charAt(6)+'</td><td>'+s_tr.charAt(7)+'</td><td>'+s_tr.charAt(8)+'</td><td>'+s_tr.charAt(9)+'</td><td>'+s_tr.charAt(10)+'</td><td>'+s_tr.charAt(11)+'</td><td>'+s_tr.charAt(12)+'</td><td>'+s_tr.charAt(13)+'</td><td>'+s_tr.charAt(14)+'</td><td>'+s_tr.charAt(15)+'</td><td>'+s_tr.charAt(16)+'</td><td>'+s_tr.charAt(17)+'</td><td>'+s_tr.charAt(18)+'</td><td>'+s_tr.charAt(19)+'</td>';
+            
+            document.getElementById('one').innerHTML='<td>'+f_tr.charAt(0)+'</td><td>'+f_tr.charAt(1)+'</td><td>'+f_tr.charAt(2)+'</td><td>'+f_tr.charAt(3)+'</td><td>'+f_tr.charAt(4)+'</td><td>'+f_tr.charAt(5)+'</td><td>'+f_tr.charAt(6)+'</td><td>'+f_tr.charAt(7)+'</td><td>'+f_tr.charAt(8)+'</td><td>'+f_tr.charAt(9)+'</td><td>'+f_tr.charAt(10)+'</td><td>'+f_tr.charAt(11)+'</td><td>'+f_tr.charAt(12)+'</td><td>'+f_tr.charAt(13)+'</td><td>'+f_tr.charAt(14)+'</td><td>'+f_tr.charAt(15)+'</td><td>'+f_tr.charAt(16)+'</td><td>'+f_tr.charAt(17)+'</td><td>'+f_tr.charAt(18)+'</td><td>'+f_tr.charAt(19)+'</td>';
+            
+            
+        }
+        
+                                                                          ///кнопки 2 и 3
+    function change(type){
+        
+        if(npower==1){
+       var t=type;///type - вид действия, 3-вниз, 2-вверх
+        
+            
+                
+        if (p>10 && p<18){                  //// РЕЖИМ РАБОТА
+            ///Задаем действие для кновок вверх и вниз
+            if(t==3){
+            num=num+1;
+        }else{
+            num=num-1;
+        }    
+            /// Настройка колличества менюшек
+            if(num>7){
+            num=num-7;
+        }else if(num<1){
+            num=num+7;
+        }
+            
+                p=10+num;
+                change_table();
+            
+            }else if(p==111){   ///СПИСАНИЕ ДИСТАНЦИИ
+                x111=calc((x111*10), y111, t)/10;
+                
+                change_table();
+                input();
+               
+                }else if(p==121){   ///СПИСАНИЕ ДИСТАНЦИИ
+                x121=calc((x121*10), y121, t)/10;
+              
+                change_table(x121);
+                input();
+                
+                
+                
+            }else if(p==1){   /// ВЫБОР РЕЖИМА
+        
+                ///Задаем действие для кновок вверх и вниз
+            if(t==3){
+            num=num+1;
+        }else{
+            num=num-1;
+        } 
+        /// далее учитываем перелистывание с 3 на 1 пункты и наоборот
+        if(num>3){
+            num=num-3;
+        }else if(num<1){
+            num=num+3;
+        }
+        /// подсвечиваем выбранный элемент
+              change_table();                          ////// РЕГУЛИРОВКА ЯРКОСТИ
+        }else if(p==10){
+            if(t==2){
+                p=17;
+                change_table();
+                
+            }else{
+            p=11;
+            change_table();
+            }
+        }else if(p==151){
+            if(t==3){
+                x151a=x151a-1;
+                if(x151a<0){
+                    x151a=x151a+8;
+                }
+            x151=x151b[x151a];
+                document.getElementById('one').style.color='rgba(253, 0, 0, '+x151/100+')';
+                document.getElementById('two').style.color='rgba(253, 0, 0, '+x151/100+')';
+                document.getElementById('three').style.color='rgba(253, 0, 0, '+x151/100+')';
+                document.getElementById('four').style.color='rgba(253, 0, 0, '+x151/100+')';
+            }
+            change_table();
+        }else if(p==161){
+            if(t==3){
+                x161a=x161a-1;
+                if(x161a<0){
+                    x161a=x161a+8;
+                }
+            x161=x151b[x161a];
+                
+            }
+                change_table();                ///УСТАНОВКА СКОРОСТИ
+        }else if(p==171){
+               
+                x171=calc(x171*100, y171, t)/100;
+            
+                change_table(x171);
+                
+        }else if(p==21||p==22||p==23||p==32||p==33){
+            if(t==3){
+            num=num+1;
+        }else{
+            num=num-1;
+        } 
+        /// далее учитываем перелистывание с 3 на 1 пункты и наоборот
+        if(num>4){
+            num=num-4;
+        }else if(num<1){
+            num=num+4;
+        }
+            change_table();
+        }else if(p==2113){
+            if(t==2){
+                p=2114;
+                change_table();
+            }
+        }else if(p==2115){
+            if(t==3){
+                p=2116;
+                change_table();
+            }
+        }else if(p==31){   ///СПИСАНИЕ ДИСТАНЦИИ
+                x31=calc(x31*10, y31, t)/10;
+                change_table();
+                input4('m1', 'm2','m3', 'm4');
+               
+                }else if(p==34){
+            if(t==3){
+            num=num+1;
+        }else{
+            num=num-1;
+        } 
+        /// далее учитываем перелистывание с 3 на 1 пункты и наоборот
+        if(num>3){
+            num=num-3;
+        }else if(num<1){
+            num=num+3;
+        }
+                    change_table();
+        }else if(p==3122){
+               
+                x3122=(calc(x3122*1000, y3122, t))/1000;
+                change_table();
+                input4('i1', 'i2','i3', 'i4');
+           
+        }else if(p==3121){
+            if(t==3){
+                y3121++;
+            }
+            if(y3121>1){
+                y3121=y3121-2;
+            }
+            input4('m5', 'm6', 'm1', 'm2');
+            change_table();
+        }else if(p==312){
+            if(t==2){
+                x3121b=1;
+            }else {
+                x3121b=0;
+            }
+            wait();
+            change_table();
+        }else if(p==3131){
+               
+                x3131=(calc(x3131*100, y3131, t))/100;
+                change_table();
+                input4('v1', 'v2','m1', 'i4');
+           
+        }else if(p==313){
+            if(t==2){
+                x3131w=1;
+            }else {
+                x3131w=0;
+            }
+            wait();
+            
+        }else if(p==2181){   ///СПИСАНИЕ ДИСТАНЦИИ
+                x2181=calc(x2181*10, y2181, t)/10;
+                change_table();
+                input4('n1', 'n2','n4', 'n5');
+                }else if(p==2183){  
+                    if(t==2){//СПИСАНИЕ ДИСТАНЦИИ
+                p=23;
+                change_table();
+                    }
+                }
+        ///change_table();
+        return num, x151;
+        
+    }}
+                                                                           /// кнопка 4
+    function enter(){
+               if(npower==1){                 ////НАЧАЛЬНЫЙ ЭКРАН
+        if(p==1){
+         if(num==1){
+            p=11;
+            num=1;
+            change_table();
+        }else if(num==2){
+            p=21;
+            num=1;
+            change_table();
+        }else  if(num==3){
+            p=31;
+            change_table();
+        }                                      //////ПУНКТЫ МЕНЮ
+        }else if(p==14){
+            s=0;
+            change_table();
+        }else if(p==161){
+            p=16;
+            change_table();
+        }else if(p==172){
+            p=17;
+            change_table();
+        }else if(p==151){
+            p=15;
+            change_table();
+        }else if(p==111){
+            p=112;
+            y111=0;
+            s111=x111;
+            s111s=s;
+            t111=sec;
+            
+            input();
+            change_table_s();
+        }else if(p==112){
+            p=11;
+            y111=0;
+            
+            
+            input();
+            change_table();
+        
+        }else if(p==121){
+            p=122;
+            y121=0;
+            s121=x121;
+            s121s=s;
+            t121=sec;
+            t122=0;
+            vs121=0;
+            input();
+            change_table();
+        }else if(p==122){
+            p=12;
+            y121=0;
+            
+            change_table();
+        }else if(p==123){
+            p=10;
+            change_table();
+        }else if(p==171){
+            p=172;
+            
+            y171=0;
+            input();
+            change_table();
+        }else if(p==21){
+         if(num==1){
+            p=2111;
+            num=1;
+            change_table();
+        }else if(num==2){
+            p=212;
+            num=1;
+            change_table();
+        }else  if(num==3){
+            p=213;
+            change_table();
+        }else  if(num==4){
+            p=22;
+            num=1;
+            change_table();
+        }
+        }else if(p==22){
+         if(num==1){
+             if(x3121b==1){
+            p=2141;
+            num=1;
+            change_table();
+             }else{
+            p=2140;
+            num=1;
+            change_table();
+             }
+        }else if(num==2){
+            if(x3131w==1){
+                p=2151;
+                num=1;
+                change_table();
+            }else{
+                p=2150;
+                num=1;
+            change_table();
+            }
+
+            
+        }else  if(num==3){
+            p=216;
+            change_table();
+        }else  if(num==4){
+            p=23;
+            num=1;
+            change_table();
+        }
+        }else if(p==23){
+         if(num==1){
+            p=217;
+            num=1;
+            change_table();
+        }else if(num==2){
+            p=2181;
+            num=1;
+            change_table();
+        }else  if(num==3){
+            p=21;
+            num=1;
+            change_table();
+        }else  if(num==4){
+            p=1;
+            num=1;
+            change_table();
+        }
+        }else if(p==2112){
+            p=2113;
+            change_table();
+        }else if(p==2114){
+            p=2115;
+            change_table();
+        }else if(p==2116){
+            p=21;
+            change_table();
+        }else if(p==212){
+            p=2121;
+            check_display();
+            change_table();
+            
+        }else if(p==2121){
+            p=2122;
+            change_table();
+        }else if(p==2122){
+            p=21;
+            change_table();
+        }else if(p==213){
+            p=21;
+            change_table();
+        }else if(p==31){
+            if(x31==9000){
+                num=1;
+                y31=0;
+                p=32;
+                change_table();
+                x31=0;
+            }else{
+                p=30;
+                change_table();
+            }
+        }else if(p==32){
+         if(num==1){
+            No_access(32);
+        }else if(num==2){
+            p=312;
+            num=1;
+            change_table();
+        }else  if(num==3){
+            p=313;
+            num=1;
+            change_table();
+        }else  if(num==4){
+            p=33;
+            num=1;
+            change_table();
+        }
+        }else if(p==33){
+         if(num==1){
+            No_access(33);
+            change_table();
+        }else if(num==2){
+            No_access(33);
+            change_table();
+        }else  if(num==3){
+            No_access(33);
+            change_table();
+        }else  if(num==4){
+            p=34;
+            num=1;
+            change_table();
+        }
+        }else if(p==34){
+         if(num==1){
+            No_access(34);
+            change_table();
+        }else if(num==2){
+            p=32;
+            num=1;
+            change_table();
+        }else  if(num==3){
+            p=1;
+            num=1;
+            change_table();
+        }
+        }else if(p==30){
+            p=1;
+            num=1;
+            change_table();
+        }else if(p==312||p==313){
+            p=32;
+            change_table();
+        }else if(p==3121){
+            if(y3121<0){
+                y3121=1;
+            }
+            x3122n=(x3121a[y3121]);
+            y3121=-1;
+            p=3122;
+            change_table();
+        }else if(p==3122){
+            y3122=0;
+            wait();
+        }else if(p==3131){
+            y3131=0;
+            wait();
+        }else if(p==2141||p==2140){
+            p=22;
+            change_table();
+        }else if(p==11||p==12||p==14||p==15||p==16||p==17||p==10){
+            p=1;
+            num=1;
+            change_table();
+        }else if(p==2151||p==2150||p==216){
+            p=22;
+            change_table();
+        }else if(p==217){
+            p=23;
+            change_table();
+        }else if(p==2181){
+            
+            p=2182;
+            y2181=0;
+            change_table();
+            
+        }else if(p==2182){
+            
+            p=2183;
+          
+            change_table();
+            
+        }else if(p==113){
+            p=11;
+            change_table();
+        }else if(p==13){
+            p=131;
+            change_table();
+        }else if(p==131){
+            p=13;
+            change_table();
+        }
+    }}
+          function wait(){
+              p=3123;
+            change_table();
+            setTimeout('p=32; change_table();',2000);
+          }   function No_access(pn){
+              p=3100;
+            change_table();
+            setTimeout('p='+pn+'; change_table();',3000);
+          } 
+        function input(){
+           if(p==111||p==121){
+                var c1='#400007';
+               var c2='#400007';
+                var c3='#400007';
+                var c4='#400007';
+                var c5='#400007';
+            if(y111==1||y121==1){
+                var c1='black';
+            }else if(y111==2||y121==2){
+                var c2='black';
+            }
+            else if(y111==3||y121==3){
+                var c3='black';
+            }else if(y111==4||y121==4){
+                var c4='black';
+            }else if(y111==5||y121==5){
+                var c5='black';
+            }
+            document.getElementById('n1').style.background=c1;
+            document.getElementById('n2').style.background=c2;
+            document.getElementById('n3').style.background=c3;
+            document.getElementById('n4').style.background=c4;
+            document.getElementById('n5').style.background=c5;
+           }else{
+               var c1='#400007';
+               var c2='#400007';
+                var c3='#400007';
+                var c4='#400007';
+                var c5='#400007';
+               document.getElementById('n1').style.background=c1;
+            document.getElementById('n2').style.background=c2;
+            document.getElementById('n3').style.background=c3;
+            document.getElementById('n4').style.background=c4;
+            document.getElementById('n5').style.background=c5;
+           }
+            
+        }
+        function input4(x1, x2, x3, x4){
+            
+           if(p==31||p==3121||p==3122||p==3131||p==2181||p==171){
+               
+                var c1='#400007';
+               var c2='#400007';
+                var c3='#400007';
+                var c4='#400007';
+                var c5='#400007';
+            if(y31==1||y3121==0||y3122==1||y3131==1||y2181==1||y171==1){
+                
+                var c1='black';
+            }else if(y31==2||y3121==1||y3122==2||y3131==2||y2181==2||y171==2){
+                             
+                var c2='black';
+            }
+            else if(y31==3||y3122==3||y3131==3||y2181==3||y171==3){
+                var c3='black';
+            }else if(y31==4||y3122==4||y3131==4||y2181==4){
+                var c4='black';
+            }///else if(y111==5||y121==5||y171==5){
+             ///   var c5='black';
+           /// }
+            document.getElementById(x1).style.background=c1;
+            document.getElementById(x2).style.background=c2;
+            document.getElementById(x3).style.background=c3;
+            document.getElementById(x4).style.background=c4;
+            ///document.getElementById('m5').style.background=c5;
+           }else{
+               var c1='#400007';
+               var c2='#400007';
+                var c3='#400007';
+                var c4='#400007';
+                var c5='#400007';
+                document.getElementById('m1').style.background=c1;
+            document.getElementById('m2').style.background=c2;
+            document.getElementById('m3').style.background=c3;
+            document.getElementById('m4').style.background=c4;
+           }
+            
+        }
+                                                                                                   /// кнопка 1
+        function right(){
+            if(npower==1){
+            if(p==11){
+                p=111;
+                change_table(x111);
+            }else if(p==111){
+                y111=y111+1;
+                if(y111>5){
+                    y111=y111-5;
+                }else if(y111<1){
+                    y111=y111+5;
+                }
+                
+                input();
+            }else if(p==12){
+                p=121;
+                change_table();
+            }else if(p==121){
+                y121=y121+1;
+                if(y121>5){
+                    y121=y121-5;
+                }else if(y121<1){
+                    y121=y121+5;
+                }
+                input();
+            }else if(p==15){
+                p=151;
+                change_table();
+            }else if(p==16){
+                p=161;
+                change_table();
+            }if(p==17){
+                p=171;
+                change_table();
+            }else if(p==171){
+                y171=y171+1;
+                if(y171>3){
+                    y171=y171-3;
+                }else if(y171<1){
+                    y171=y171+3;
+                }
+                input4('n3', 'n4', 'n5', 'n1');
+            }else if(p==2111){
+                p=2112;
+                change_table();
+            }else if(p==31){
+                y31=y31+1;
+                if(y31>4){
+                    y31=y31-4;
+                }else if(y31<1){
+                    y31=y31+4;
+                }
+                
+                input4('m1', 'm2','m3', 'm4');
+            }else if(p==30){
+                p=31;
+                num=1;
+                ///y31=0;
+                input4('m1', 'm2','m3', 'm4');
+                change_table();
+            }else if(p==3122){
+                y3122=y3122+1;
+                if(y3122>4){
+                    y3122=y3122-4;
+                }else if(y3122<1){
+                    y3122=y3122+4;
+                }
+                
+                input4('i1','i2' ,'i3' ,'i4');
+            }else if(p==312){
+                p=3121;
+                change_table();
+            }else if(p==313){
+                p=3131;
+                change_table();
+            }else if(p==3131){
+                y3131=y3131+1;
+                if(y3131>3){
+                    y3131=y3131-3;
+                }else if(y3131<1){
+                    y3131=y3131+3;
+                }
+                
+                input4('v1','v2' ,'m1' ,'i4');
+            }else if(p==2181){
+                y2181=y2181+1;
+                if(y2181>4){
+                    y2181=y2181-4;
+                }else if(y2181<1){
+                    y2181=y2181+4;
+                }
+                
+                input4('n1','n2' ,'n4' ,'d10');
+            }else if(p==2183){
+                p=2181;
+                change_table();
+            }
+                
+                }}
+        
+    </script>
+    </head>
+    <body>
+        <div id="tabl">
+        <table>
+            <tr id="one"><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="two"><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="three"><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+            <tr id="four"><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+        </div>
+        <div id="buttons">
+        <a onclick="right();"><div id="img1"></div></a>
+            <a onclick="change(2);"><div id="img2"></div></a>
+            <a onclick="change(3);"><div id="img3"></div></a>
+            <a onclick="enter();"><div id="img4"></div></a>
+            </div>
+        <script>
+          function ccc(){
+              alert(s);
+          }  
+        function vplus(){
+            vob=Math.round((vob+0.1)*10)/10;
+            change_table();
+            document.getElementById("speed").
+                    innerHTML = 'Скорость = '+vob;
+        }
+        function vminus(){
+            vob=Math.round((vob-0.1)*10)/10;
+            change_table();
+            document.getElementById("speed").
+                    innerHTML = 'Скорость = '+vob;
+            
+            clearInterval(intervalID);
+        }
+            var npower=0;
+            function power(){
+                if(npower==0){
+                    
+                document.getElementById('map2').style.background='rgba(0, 200, 0, 0.5)';
+                p=0;
+                change_table();
+                
+                setTimeout('p=991;change_table()', 2000);
+                setTimeout('p=992;change_table()', 7000);
+                setTimeout('p=993;change_table()', 7500);
+                setTimeout('p=0;change_table()',8000);
+            setTimeout(check_display01,8500);
+            setTimeout(check_display02,9000);
+            setTimeout(check_display03,9500);
+                ///setTimeout('p=993;change_table()', 7500);
+                
+               ///var i=0;
+                ///while(i<21){
+                    ///i++;
+                    ///document.getElementById('a1').style.background='rgba(253, 0, 0, 1);';
+                ///}                
+                
+                
+                                   
+                setTimeout('p=994;change_table()', 10000);
+                setTimeout('p=995;change_table()', 10500);
+                setTimeout('p=996;change_table()', 11000);
+                setTimeout('p=997;change_table()', 11500);
+                setTimeout('p=998;change_table()', 12000);
+                setTimeout('p=999;change_table()', 12500);
+                setTimeout('p=9910;change_table()', 13000);
+                setTimeout('p=9911;change_table()', 13500);
+                setTimeout('p=10;change_table()', 14000);
+                setTimeout('npower=1;', 14000);
+                setTimeout('intervalID2=setInterval(tick, 1000);', 14000);  
+                
+                    
+            }
+            
+            }
+            function poweroff(){
+                if(npower==0){
+                    return;
+                }else{
+                ///document.getElementById('map').style.background='rgba(0, 200, 0, 0)';
+                document.getElementById('map2').style.background='rgba(0, 200, 0, 0)';
+                p=0;
+                npower=0;
+                change_table();
+                    clearInterval(intervalID2);
+                }
+            }
+            function checksog(){
+                
+                sog=parseInt(document.form1.sog.value);
+                if(sog>-10||sog<30){
+                    sogtf='true';
+                }else{
+                    sogtf='false';
+                }
+                if(sog>20){
+                        sog=20;
+                        document.form1.sog.value=sog;
+                    }else if(sog<-10){
+                        sog=-5;
+                        document.form1.sog.value=sog;
+                    }else if(sogtf=='false'){
+                        sog=15;
+                        document.form1.sog.value=sog;
+                    }
+                
+                vt=parseInt(document.form1.vt.value);
+                if(vt>-10||vt<30){
+                    vttf='true';
+                }else{
+                    vttf='false';
+                }
+                    if(vt>10){
+                        vt=10;
+                        document.form1.vt.value=vt;
+                    }else if(vt<-10){
+                        vt=0;
+                        document.form1.vt.value=vt;
+                    }else if(vttf=='false'){
+                        vt=0;
+                        document.form1.vt.value=vt;
+                    }
+                kut=parseInt(document.form1.kut.value);
+                if(kut>-10||kut<30){
+                    kuttf='true';
+                }else{
+                    kuttf='false';
+                }
+                    if(kut>360){
+                        kut=0;
+                        document.form1.kut.value=kut;
+                    }else if(kut<0){
+                        kut=0;
+                    }else if(kuttf=='false'){
+                        kut=0;
+                        document.form1.kut.value=kut;
+                    }
+                voln=parseInt(document.form1.voln.value);
+                if(voln>-10||voln<30){
+                    volntf='true';
+                }else{
+                    volntf='false';
+                }
+               if(voln>9){
+                   voln=9;
+                   document.form1.voln.value=voln;
+               }else if(voln<0){
+                   voln=0;
+                   document.form1.voln.value=voln;
+               }else if(volntf=='false'){
+                        voln=0;
+                        document.form1.voln.value=voln;
+                    }
+                ///document.getElementById('test').value=112;
+            }
+            function openbox(){
+                document.getElementById('cp').style.top='100';
+                ///box=1;
+                ///document.getElementById('cp').style.background='white';
+            }
+            function closebox(){
+                document.getElementById('cp').style.top='-400';
+                box=0;
+            }
+       
+       /// alert(anyString.charAt(0));
+        </script>
+        
+        
+        <div id="timer"></div>
+        <p onclick="vplus();"></p><br>
+        <p onclick="vminus();"></p><br>
+        <p onclick="check_display();"></p>
+        <div id="speed"></div>
+        <div id="repit"></div>
+        
+        <div id="fon"><img src="fon221.jpg"></div>
+        <div id="map"></div>
+        <div id="map2"></div>
+        <div id="map3" onclick="power();"></div>
+        <div id="map4" onclick="poweroff();"></div>
+        
+        <div id="cp">
+        <form name="form1">
+            <table>
+            <tr><td colspan="3">КУРС СУДНА : 0&deg;<br></td></tr>
+                <tr><td colspan='2'>ИСТИННАЯ СКОРОСТЬ:</td><td><input onfocus="box=1;" onblur="box=0;" class="inp and form_s" type="number" name="sog" value="15"></td></tr>
+            <tr><td>ТЕЧЕНИЕ:</td><td>Vт = <input onfocus="box=1;" onblur="box=0;" class="inp" type="number" id="vt" value="0">Кт = </td><td><input onfocus="box=1;" onblur="box=0;" class="inp" type="number" id="kut" value="0"></td></tr>
+            <tr><td colspan="2">ВОЛНЕНИЕ: (в баллах) : </td><td><input onfocus="box=1;" onblur="box=0;" class="inp" type="number" id="voln" value="2"></td></tr>
+            </table>
+            <input class="knopka and knopka2" type="button" onclick="checksog();" value="ПРИМЕНИТЬ">
+            <input class="knopka and knopka3" type="button" onclick="closebox();" value="СКРЫТЬ">
+
+            </form>
+        
+        </div>
+        <img class="set" src="gear%20(3).png" onclick="openbox();">
+        
+    </body>
+        <script>
+            function check_d(){
+            }
+            function check_display01(){
+                var id=0;
+                while(id<40){
+                    
+             document.getElementsByClassName('a1')[id].style.background='#400007';
+                document.getElementsByClassName('a2')[id].style.background='rgba(253, 0, 0, 1)';
+                                                   id++;
+                                                   }
+            }
+            function check_display02(){
+                var id=0;
+                while(id<40){
+                    
+             document.getElementsByClassName('a1')[id].style.background='rgba(253, 0, 0, 1)';
+                document.getElementsByClassName('a2')[id].style.background='#400007';
+                                                   id++;
+                                                   }
+            }function check_display03(){
+                var id=0;
+                while(id<40){
+                    
+             document.getElementsByClassName('a1')[id].style.background='#400007';
+                document.getElementsByClassName('a2')[id].style.background='#400007';
+                                                   id++;
+                                                   }
+            }
+            
+            document.onkeydown=function key(){
+                if(box==0){
+                var keycode=0;
+                keycode=event.which;
+                if(keycode==49){
+                    right();
+                }else if(keycode==50){
+                    change(2);
+                }else if(keycode==51){
+                    change(3);
+                }else if(keycode==52){
+                    enter();
+                }
+                }
+            }
+    </script>
